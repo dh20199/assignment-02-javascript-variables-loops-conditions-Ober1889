@@ -96,7 +96,7 @@ function returnArray (first, second, third) {
  * @returns {string} a sentence  composed from the first 3 elements of the array
  */
 function splitArray(thisArray) {
-  let array = ["Elvis Presley", "Rock N Roll", "was King"];
+  let array = ["Tim Horton", "a Donut", "was"];
   return (array[0] + " " + array[2] + " " + array[1]); 
 
   // remember you can access individual elements of an array with
