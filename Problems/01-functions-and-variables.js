@@ -33,7 +33,7 @@
 
  function hello () {
     return("Hello!");
-  hello();
+  
   // if you want you can declare a string variable first
   // or in this case you can just return the string directly
   // with something like "return 'Hello!'"
@@ -50,9 +50,9 @@
  */
 function greeting() {
   let name = "Chris";
-  let greeting = "Hello!";
+  let greeting = "Hello";
   return greeting + " " + name;
-  greeting();
+ 
   // use the '+' operator to combine
   // strings.  So for instance, if I wanted to
   // say goodbye, I might write
@@ -75,7 +75,7 @@ function returnArray (first, second, third) {
   o = "is a famous 19th Century",
   p = "German General.";
   return [i + " " +o + " " + p + " "];
-  returnArray();
+ 
   // you can define the array using "new Array ()" or just "[ , , ]"
   // don't forget to return it
 }
@@ -97,7 +97,7 @@ function returnArray (first, second, third) {
 function splitArray(thisArray) {
   let array = ["Elvis Presley", "Rock N Roll", "was King"];
   return (array[0] + " " + array[2] + " " + array[1]); 
-splitArray();
+
   // remember you can access individual elements of an array with
   // array[0]
   // array[1]
@@ -119,7 +119,7 @@ function subtract(number1, number2) {
  let b = 18;
  let answer = (a - b);
  return answer;
- subtract();
+
   // subtract number2 from number1, and return the result.
 }
 
@@ -129,6 +129,16 @@ function subtract(number1, number2) {
 // "I can only subtract numbers."
 
 function carefulSubtract (first, second) {
+  if (result == null) 
+      return false;
+  if (result < 0)
+      return result;
+  if (text.matches("[0-9]+") && text.length() > 2) 
+  return string;
+  let a = 34;
+  let b = 18;
+  let result = (a - b);
+  let string = "I can only subtract numbers.";
   // test to be sure that both first and second are numbers.
   // if so, return the result. Otherwise, return the string
   // "I can only subtract numbers."
