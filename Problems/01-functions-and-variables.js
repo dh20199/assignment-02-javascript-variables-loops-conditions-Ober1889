@@ -116,9 +116,7 @@ function splitArray(thisArray) {
  * @returns {number} the difference of the two parameters
  */
 function subtract(number1, number2) {
- let a = 5,
-     b = 5;
- let answer = a - b;
+ let answer = (number1 - number2);
  return answer;
 
   // subtract number2 from number1, and return the result.
@@ -130,16 +128,18 @@ function subtract(number1, number2) {
 // "I can only subtract numbers."
 
 function carefulSubtract (first, second) {
+  let a = 34;
+  let b = 18;
+  let result = (a - b);
+  let string = "I can only subtract numbers.";
+ 
   if (result == null) 
       return false;
   if (result < 0)
       return result;
   if (text.matches("[0-9]+") && text.length() > 2) 
   return string;
-  let a = 34;
-  let b = 18;
-  let result = (a - b);
-  let string = "I can only subtract numbers.";
+ 
   // test to be sure that both first and second are numbers.
   // if so, return the result. Otherwise, return the string
   // "I can only subtract numbers."
