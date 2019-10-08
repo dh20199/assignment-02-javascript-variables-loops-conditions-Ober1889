@@ -118,7 +118,7 @@ function splitArray(thisArray) {
 function subtract(number1, number2) {
  let a = 18;
  let b = 5;
- let answer = (a - b);
+ let answer = a - b;
  return answer;
 
   // subtract number2 from number1, and return the result.
