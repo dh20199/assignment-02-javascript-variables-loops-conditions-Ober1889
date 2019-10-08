@@ -49,8 +49,8 @@
  * @returns {string} a sentence that uses NAME i nits construction.
  */
 function greeting() {
-  let name = "Chris";
-  let greeting = "Hello";
+  let name = "Ms. Atwood!";
+  let greeting = "Hello,";
   return greeting + " " + name;
  
   // use the '+' operator to combine
@@ -71,10 +71,11 @@ function greeting() {
  * @returns {} 
  */
 function returnArray (first, second, third) {
-  let i  = "Gerhard Von Blucher",
-  o = "is a famous 19th Century",
-  p = "German General.";
-  return [i + " " +o + " " + p + " "];
+  let i  = "Tim",
+  o = "Horton",
+  p = "Donuts";
+  let Array1 = [ i, o, p,];
+  return Array1; }
  
   // you can define the array using "new Array ()" or just "[ , , ]"
   // don't forget to return it
