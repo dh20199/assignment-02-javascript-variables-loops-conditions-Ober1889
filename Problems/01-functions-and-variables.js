@@ -30,7 +30,10 @@
  * greet the user!
  * @returns {string} should be exactly "Hello!"
  */
-function hello () {
+
+ function hello () {
+    return("Hello!");
+  hello();
   // if you want you can declare a string variable first
   // or in this case you can just return the string directly
   // with something like "return 'Hello!'"
@@ -45,7 +48,11 @@ function hello () {
  * @param {string} name
  * @returns {string} a sentence that uses NAME i nits construction.
  */
-function greeting(name) {
+function greeting() {
+  let name = "Chris";
+  let greeting = "Hello!";
+  return greeting + " " + name;
+  greeting();
   // use the '+' operator to combine
   // strings.  So for instance, if I wanted to
   // say goodbye, I might write
@@ -61,9 +68,14 @@ function greeting(name) {
  * @param {} first
  * @param {} second
  * @param {} third
- * @returns {array} 
+ * @returns {} 
  */
 function returnArray (first, second, third) {
+  let i  = "Gerhard Von Blucher",
+  o = "is a famous 19th Century",
+  p = "German General.";
+  return [i + " " +o + " " + p + " "];
+  returnArray();
   // you can define the array using "new Array ()" or just "[ , , ]"
   // don't forget to return it
 }
@@ -82,7 +94,8 @@ function returnArray (first, second, third) {
  * @param {} thisArray of minimum length 3
  * @returns {string} a sentence  composed from the first 3 elements of the array
  */
-function splitArray (thisArray) {
+function splitArray(thisArray) {
+  
   // remember you can access individual elements of an array with
   // array[0]
   // array[1]
@@ -100,6 +113,11 @@ function splitArray (thisArray) {
  * @returns {number} the difference of the two parameters
  */
 function subtract(number1, number2) {
+ let a = 34;
+ let b = 18;
+ let answer = (a - b);
+ return answer;
+ subtract();
   // subtract number2 from number1, and return the result.
 }
 
