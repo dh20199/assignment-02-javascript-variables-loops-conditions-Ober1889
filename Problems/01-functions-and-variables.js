@@ -72,10 +72,10 @@ function greeting() {
  */
 function returnArray (first, second, third) {
   let i  = "Tim",
-  o = "Horton",
-  p = "Donuts";
+      o = "Horton",
+      p = "Donuts";
   let Array1 = [ i, o, p,];
-  return Array1; }
+  return Array1;
  
   // you can define the array using "new Array ()" or just "[ , , ]"
   // don't forget to return it
