@@ -96,7 +96,7 @@ function returnArray (first, second, third) {
  * @returns {string} a sentence  composed from the first 3 elements of the array
  */
 function splitArray(thisArray) {
-  let array = ["Tim Horton", "a Donut", "was"];
+  let array = ["Tim Horton", "a Donut.", "was"];
   return (array[0] + " " + array[2] + " " + array[1]); 
 
   // remember you can access individual elements of an array with
@@ -116,8 +116,8 @@ function splitArray(thisArray) {
  * @returns {number} the difference of the two parameters
  */
 function subtract(number1, number2) {
- let a = 34;
- let b = 18;
+ let a = 0;
+ let b = 5;
  let answer = (a - b);
  return answer;
 
