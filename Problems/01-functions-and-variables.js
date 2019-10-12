@@ -30,10 +30,8 @@
  * greet the user!
  * @returns {string} should be exactly "Hello!"
  */
-
  function hello () {
     return("Hello!");
-  
   // if you want you can declare a string variable first
   // or in this case you can just return the string directly
   // with something like "return 'Hello!'"
@@ -52,7 +50,6 @@ function greeting() {
   let name = "Ms. Atwood!";
   let greeting = "Hello,";
   return greeting + " " + name;
- 
   // use the '+' operator to combine
   // strings.  So for instance, if I wanted to
   // say goodbye, I might write
@@ -70,13 +67,12 @@ function greeting() {
  * @param {} third
  * @returns {} 
  */
-function returnArray (first, second, third) {
-  let i  = "Tim",
-      o = "Horton",
-      p = "Donuts";
-  let Array1 = [ i, o, p,];
+function returnArray(first, second, third) {
+  var first  = "Tim",
+      second = "Horton",
+      third = "Donuts";
+  let Array1 = [ first, second, third ];
   return Array1;
- 
   // you can define the array using "new Array ()" or just "[ , , ]"
   // don't forget to return it
 }
@@ -96,14 +92,12 @@ function returnArray (first, second, third) {
  * @returns {string} a sentence  composed from the first 3 elements of the array
  */
 function splitArray(thisArray) {
-  let array = ["Tim Horton", "a Donut.", "was"];
-  return (array[0] + " " + array[2] + " " + array[1]); 
-
+  var thisArray = ["Tim Horton", "a Donut.", "was"];
+  return (thisArray[0] + " " + thisArray[2] + " " + thisArray[1]);
   // remember you can access individual elements of an array with
   // array[0]
   // array[1]
   // etc.
-
 }
 
 // Problem 5
@@ -116,9 +110,8 @@ function splitArray(thisArray) {
  * @returns {number} the difference of the two parameters
  */
 function subtract(number1, number2) {
- let answer = (number1 - number2);
- return answer;
-
+ let number = (number1 - number2);
+ return number;
   // subtract number2 from number1, and return the result.
 }
 
@@ -128,16 +121,14 @@ function subtract(number1, number2) {
 // "I can only subtract numbers."
 
 function carefulSubtract (first, second) {
-  let a = 34;
-  let b = 18;
-  let result = (a - b);
+  let result = (first - second);
   let string = "I can only subtract numbers.";
- 
+
   if (result == null) 
       return false;
   if (result < 0)
       return result;
-  if (text.matches("[0-9]+") && text.length() > 2) 
+  if (result.matches("[0-9]+") && text.length() > 2) 
   return string;
  
   // test to be sure that both first and second are numbers.
