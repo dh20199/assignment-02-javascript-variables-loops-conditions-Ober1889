@@ -135,7 +135,7 @@ function carefulSubtract (first, second) {
   // if so, return the result. Otherwise, return the string
   // "I can only subtract numbers."
 
-}
+
 
 
 
