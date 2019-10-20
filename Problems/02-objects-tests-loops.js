@@ -24,7 +24,7 @@ function returnObject (first, last, prof) {
   var object = { 
    firstName: 'Italo',
    lastName: 'Calvino',
-   profession: 'novelist'
+   profession: 'novelist';
   }
   return object;
   } 
@@ -67,13 +67,19 @@ function returnObject (first, last, prof) {
  * @returns {string} a sentence constructed from the object parameters 
  */
 function objectToSentence (obj) {
+  var obj = { 
+    firstName: 'Italo',
+    lastName: 'Calvino',
+    profession: 'novelist'
+   }
+   return obj.firstName + " " + obj.lastName + " " + "is a" + " " + obj.profession;
   // remember you can refer to object properties using either of 2 methods
   // obj['propertyname']
   // or
   // obj.propertyname
   // note the quotes in the first options
   // also note: you need to change this next line!!
-  return 'RETURNVALUE';
+
 }
 
 
@@ -127,6 +133,11 @@ function wasWriter (obj) {
  * @returns {string}
  */
 function stringIterator (aString, aNumber) {
+  var i = aString;
+  var o = aNumber; 
+
+  for (var o = 0; o< 1; o++) {OH Canada!};
+  return ;
   // remember a basic "for" loop has this structure:
   // for (var i = 0; i< SOMETHING; i++) {...statements...  };
 }

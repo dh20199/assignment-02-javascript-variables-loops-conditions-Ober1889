@@ -124,12 +124,12 @@ function carefulSubtract (first, second) {
   let result = (first - second);
   let string = "I can only subtract numbers.";
 
-  if (result == null) 
-      return false;
-  if (result < 0)
-      return result;
-  if (result.matches("[0-9]+") && text.length() > 2) 
-  return string;
+  if (result = typeof.Number) {
+      return true;
+  } else { 
+      return string;
+   } 
+  
  
   // test to be sure that both first and second are numbers.
   // if so, return the result. Otherwise, return the string
