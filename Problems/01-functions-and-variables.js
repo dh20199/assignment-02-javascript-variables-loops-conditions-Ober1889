@@ -126,12 +126,12 @@ function carefulSubtract (first, second) {
   if (typeof(first) === 'number' && typeof(second) === 'number') {
     return output;
   } else {
-    return string;}
-}
-
+    return string;
+  }
   // test to be sure that both first and second are numbers.
   // if so, return the result. Otherwise, return the string
   // "I can only subtract numbers."
+  }
 
 // Problem 6
 // Write a simple function that does the following:
@@ -148,16 +148,14 @@ function typeTester (unknown) {
   let result = unknown;
   let string = "sorry, i can't do anything with a null value.";
   let other = "I don't know how to use that kind of variable.";
+
   if(typeof(result) === 'string') {
   return unknown + "yay";
-  }
-  if(typeof(result) === 'number') {
+  } if(typeof(result) === 'number') {
   return unknown * unknown;
-  }
-  if(typeof(result) === 'object') {
+  } if(typeof(result) === 'object') {
   return string;
-  }
-  else {
+  } else {
   return other;
   }
 }
