@@ -120,11 +120,11 @@ function subtract(number1, number2) {
 // sure that both parameters are numbers. If so, return the result. If not, return the string
 // "I can only subtract numbers."
 
-function carefulSubtract (first, second) {
-  let output = first - second;
+function carefulSubtract (a, b) {
+  let output = a - b;
   let string = "I can only subtract numbers.";
   
-  if (typeof(first) === 'number' && typeof(second) === 'number') {
+  if (typeof(a) === 'number' && typeof(b) === 'number') {
     return output;
   } else {
     return string;}
