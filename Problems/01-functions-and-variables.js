@@ -121,23 +121,17 @@ function subtract(number1, number2) {
 // "I can only subtract numbers."
 
 function carefulSubtract (first, second) {
-  let result = (first - second);
+  let output = first - second;
   let string = "I can only subtract numbers.";
   
-  if (first, second = typeof number) {;
-      return result;
+  if (typeof(first) === 'number' && typeof(second) === 'number') {
+    return output;
   } else {
-  console,log (result = typeof object) ;
-  return string; } 
+    return string;}
 }
- 
   // test to be sure that both first and second are numbers.
   // if so, return the result. Otherwise, return the string
   // "I can only subtract numbers."
-
-
-
-
 
 // Problem 6
 // Write a simple function that does the following:
@@ -181,3 +175,17 @@ for (let i in functions) {
 // exports.greeting = greeting;
 // exports.returnArray = returnArray;
 // exports.splitArray = splitArray;
+
+
+function carefulSubtract (first, second) {
+  let output = first - second;
+  let string = "I can only subtract numbers.";
+} 
+  if (isNaN(output)) {
+    return string;
+  } else {
+    return output;}
+}
+// gives numbers!!!!
+
+  
