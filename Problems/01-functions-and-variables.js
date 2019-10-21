@@ -120,11 +120,11 @@ function subtract(number1, number2) {
 // sure that both parameters are numbers. If so, return the result. If not, return the string
 // "I can only subtract numbers."
 
-function carefulSubtract (a, b) {
-  let output = a - b;
+function carefulSubtract (first, second) {
+  let output = first - second;
   let string = "I can only subtract numbers.";
   
-  if (typeof(a) === 'number' && typeof(b) === 'number') {
+  if (typeof(first) === 'number' && typeof(second) === 'number') {
     return output;
   } else {
     return string;}
@@ -145,9 +145,25 @@ function carefulSubtract (a, b) {
  * @returns {} a meessage about unknown, or the square of unknown if it is a number
  */
 function typeTester (unknown) {
+  let result = unknown;
+  let string = "sorry, i can't do anything with a null value.";
+  let other = "I don't know how to use that kind of variable.";
+  if(typeof(result) === 'string') {
+  return unknown + "yay";
+  }
+  if(typeof(result) === 'number') {
+  return unknown * unknown;
+  }
+  if(typeof(result) === 'null') {
+  return string;
+  }
+  else {
+  return other;
+  }
+}
   // use an if/else construction, a switch/case , or any other branching logic. Remember to
   // return a value. 
-}
+
 
 
 
@@ -177,15 +193,7 @@ for (let i in functions) {
 // exports.splitArray = splitArray;
 
 
-function carefulSubtract (first, second) {
-  let output = first - second;
-  let string = "I can only subtract numbers.";
-} 
-  if (isNaN(output)) {
-    return string;
-  } else {
-    return output;}
-}
-// gives numbers!!!!
+
+
 
   
