@@ -154,7 +154,7 @@ function typeTester (unknown) {
   if(typeof(result) === 'number') {
   return unknown * unknown;
   }
-  if(typeof(result) === 'null') {
+  if(typeof(result) === 'object') {
   return string;
   }
   else {
