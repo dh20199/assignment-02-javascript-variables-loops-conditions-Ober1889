@@ -137,8 +137,9 @@ function carefulSubtract (first, second) {
 // Write a simple function that does the following:
 // if the parameter is a string, return the string followed by the additional text " yay!"
 // if the parameter is a number, return the *square* of the number
-// if the parameter is null, return the string "sorry, I can't do anything with a null value."
+// if the parameter is undefined, return the string "Sorry, I can't do anything with a undefined value."
 // for any other type, return "I don't know how to use that kind of variable."
+
 /**
  * identify the type of UNKNOWN
  * @param {} unknown
@@ -147,12 +148,15 @@ function carefulSubtract (first, second) {
 function typeTester (unknown) {
   let result = unknown;
   let string = "sorry, i can't do anything with a null value.";
+  let notdefined = "Sorry, I can't do anything with a undefined value.";
   let other = "I don't know how to use that kind of variable.";
 
   if(typeof(result) === 'string') {
-  return unknown + "yay";
+  return unknown + " yay!";
   } if(typeof(result) === 'number') {
   return unknown * unknown;
+  } if(typeof(result) === 'undefined') {
+  return notdefined;  
   } if(typeof(result) === 'object') {
   return string;
   } else {
