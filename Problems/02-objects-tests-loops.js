@@ -23,8 +23,8 @@
 function returnObject (first, last, prof) {
 
   var object = { 
-    firstname: first,
-    lastname:last,
+    firstName: first,
+    lastName:last,
     profession:prof
   };
   return object;
@@ -115,7 +115,7 @@ function wasWriter (obj) {
   if (obj.profession === 'novelist') {
   string += ' was a writer.';
   } else {
-  string += ' was not a writer';
+  string += ' was not a writer.';
   }
   return string;
   }
@@ -172,12 +172,10 @@ function stringIterator (aString, aNumber) {
  */
 function prettyIterator (aString, aNumber) {
   var string = '';
-  for (var i = 1; i< aNumber; i++) {string += aString + '(' + i + ')' + '\n';}
+  for (var i = 1; i<= aNumber; i++) {string += aString + '(' + i + ')' + '\n';}
   return string;
   // be sure to check your results on this one; it has a trick. maybe 2. 
 }
-
-
 
 // Problem 6
 // Write a function that, when passed an object 
@@ -215,13 +213,18 @@ function prettyIterator (aString, aNumber) {
  * @returns {string} 
  */
 function computeReign (pm) {
-  // declare a variable, setting it equal to the
-  // length of reign. Now declare another variable,
-  // and construct the desired sentence using the appropriate
-  // attributes and variables. remember that you may need to
-  // "escape" the ' with \'
-  // finally, makre sure you return the sentence as the value of the function
+  var reign = pm.to - pm.from;
+  var pm;
+  pm = pm.fullName + '\'s reign was' + reign + ' years long.';
+  return pm;
 }
+
+// declare a variable, setting it equal to the
+// length of reign. Now declare another variable,
+// and construct the desired sentence using the appropriate
+// attributes and variables. remember that you may need to
+// "escape" the ' with \'
+// finally, makre sure you return the sentence as the value of the function
 
 
 
