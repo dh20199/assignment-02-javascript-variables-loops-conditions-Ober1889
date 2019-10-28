@@ -23,15 +23,12 @@
 function returnObject (first, last, prof) {
 
   var object = { 
-    firstName: 'Italo',
-    lastName: 'Calvino',
-    profession: 'novelist'
+    firstname: first,
+    lastname:last,
+    profession:prof
   };
   return object;
 } 
-
-
-
 // it might be easiest here to declare a variable
 // var o = {};
 // and then add properties to it one by one
@@ -67,7 +64,14 @@ function returnObject (first, last, prof) {
  * @param {string} obj.profession - profession of that person
  * @returns {string} a sentence constructed from the object parameters 
  */
+
+
+ 
 function objectToSentence (obj) {
+  var string; 
+  string = obj.firstName + ' ' + obj.lastName + ' was a ' + obj.profession;
+  return string;}
+  
 
   // remember you can refer to object properties using either of 2 methods
   // obj['propertyname']
@@ -75,7 +79,7 @@ function objectToSentence (obj) {
   // obj.propertyname
   // note the quotes in the first options
   // also note: you need to change this next line!!
-}
+
 
 
 
@@ -106,12 +110,20 @@ function objectToSentence (obj) {
  * @returns {string} a sentence constructed from the object parameters
  */
 function wasWriter (obj) {
+  var string;
+  string = obj.firstName + ' ' + obj.lastName;
+  if (obj.profession === 'novelist') {
+  string += ' was a writer.';
+  } else {
+  string += ' was a not a writer';
+  }
+  return string;
+  }
   // in an if/else statement
   // it is acceptable to put the
   // "return" statement inside the conditional braces
   // so you can, e.g.,
   // if (...) {return A} else {return B}
-}
 
 
 // Problem 4
@@ -129,6 +141,10 @@ function wasWriter (obj) {
  * @returns {string}
  */
 function stringIterator (aString, aNumber) {
+  var string = '';
+  for (var i = 0; i< aNumber; i++) {string += aString;}
+  return string;
+
   // remember a basic "for" loop has this structure:
   // for (var i = 0; i< SOMETHING; i++) {...statements...  };
 }
@@ -155,6 +171,9 @@ function stringIterator (aString, aNumber) {
  * @returns   {string}
  */
 function prettyIterator (aString, aNumber) {
+  var string = '';
+  for (var i = 1; i< aNumber; i++) {string += aString + '(' + i + ')' + '\n';}
+  return string;
   // be sure to check your results on this one; it has a trick. maybe 2. 
 }
 
@@ -173,7 +192,6 @@ function prettyIterator (aString, aNumber) {
 //    from     : 1896,
 //    to       : 1911
 // }
-
 // it should return
 // "Wilfred Laurier's reign was 15 years long."
 // note: when you're testing, it will be easier to read your code if
@@ -187,7 +205,6 @@ function prettyIterator (aString, aNumber) {
 //    to       : 1911
 // }
 // computeReign (willy);
-
 /**
  * 
  * @param {object} pm
