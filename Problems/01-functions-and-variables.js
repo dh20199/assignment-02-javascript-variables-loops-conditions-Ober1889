@@ -148,7 +148,7 @@ function carefulSubtract (first, second) {
 function typeTester (unknown) {
   let result = unknown;
   let string = "sorry, i can't do anything with a null value.";
-  let notdefined = "Sorry, I can't do anything with a undefined value.";
+  let notdefined = "Sorry, I can't do anything with an undefined value.";
   let other = "I don't know how to use that kind of variable.";
 
   if(typeof(result) === 'string') {

@@ -69,7 +69,7 @@ function returnObject (first, last, prof) {
  
 function objectToSentence (obj) {
   var string; 
-  string = obj.firstName + ' ' + obj.lastName + ' was a ' + obj.profession;
+  string = obj.firstName + ' ' + obj.lastName + ' was a ' + obj.profession + '.';
   return string;}
   
 
@@ -115,7 +115,7 @@ function wasWriter (obj) {
   if (obj.profession === 'novelist') {
   string += ' was a writer.';
   } else {
-  string += ' was a not a writer';
+  string += ' was not a writer';
   }
   return string;
   }
