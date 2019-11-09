@@ -212,12 +212,13 @@ function prettyIterator (aString, aNumber) {
  * @param {number} pm.toparty
  * @returns {string} 
  */
-function computeReign (pm) {
-  var reign = pm.to - pm.from;
-  var pm;
-  pm = pm.fullName + '\'s reign was' + reign + ' years long.';
-  return pm;
-}
+function computeReign (pm) { 
+  var str = '';
+  var reign;
+  reign = pm.to - pm.from;
+  str += pm.fullName + '\'s reign was ' + reign + ' years long.';
+  return str;
+} 
 
 // declare a variable, setting it equal to the
 // length of reign. Now declare another variable,
@@ -273,6 +274,15 @@ function computeReign (pm) {
  *  the properties of the individual objects comprising `list`
  */
 function sentences(list) {
+  var str;
+  var reign;
+  var pm;
+  for (pm of pmlist) {
+    reign = pm.to - pm.from;
+    str += pm.fullName + '\'s reign was' + reign + ' years long.' + '\n';
+  }
+  return str;
+}
   // Hint: "ministers" is an ARRAY of OBJECTS. The simplest way to solve this problem
   // is to use the "for...of" loop syntax to loop through the array,
   // and the object[attribute] or object.attribute reference format to access
