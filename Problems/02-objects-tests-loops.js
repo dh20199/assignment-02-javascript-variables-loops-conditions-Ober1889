@@ -73,12 +73,12 @@ function objectToSentence (obj) {
   return string;}
   
 
-  // remember you can refer to object properties using either of 2 methods
-  // obj['propertyname']
-  // or
-  // obj.propertyname
-  // note the quotes in the first options
-  // also note: you need to change this next line!!
+// remember you can refer to object properties using either of 2 methods
+// obj['propertyname']
+// or
+// obj.propertyname
+// note the quotes in the first options
+// also note: you need to change this next line!!
 
 
 
@@ -113,17 +113,17 @@ function wasWriter (obj) {
   var string;
   string = obj.firstName + ' ' + obj.lastName;
   if (obj.profession === 'novelist') {
-  string += ' was a writer.';
+    string += ' was a writer.';
   } else {
-  string += ' was not a writer.';
+    string += ' was not a writer.';
   }
   return string;
-  }
-  // in an if/else statement
-  // it is acceptable to put the
-  // "return" statement inside the conditional braces
-  // so you can, e.g.,
-  // if (...) {return A} else {return B}
+}
+// in an if/else statement
+// it is acceptable to put the
+// "return" statement inside the conditional braces
+// so you can, e.g.,
+// if (...) {return A} else {return B}
 
 
 // Problem 4
@@ -283,11 +283,11 @@ function sentences(pmlist) {
   }
   return str;
 }
-  // Hint: "ministers" is an ARRAY of OBJECTS. The simplest way to solve this problem
-  // is to use the "for...of" loop syntax to loop through the array,
-  // and the object[attribute] or object.attribute reference format to access
-  // the internal components of the objects.
-}
+// Hint: "ministers" is an ARRAY of OBJECTS. The simplest way to solve this problem
+// is to use the "for...of" loop syntax to loop through the array,
+// and the object[attribute] or object.attribute reference format to access
+// the internal components of the objects.
+
 
 // DO NOT MODIFY -- FOR AUTOMATED TESTING ONLY
 if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
