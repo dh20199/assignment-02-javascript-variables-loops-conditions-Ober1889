@@ -154,8 +154,6 @@ function typeTester (unknown) {
     return unknown + ' yay!';
   } if(typeof(result) === 'number') {
     return unknown * unknown;
-  } if(typeof(result) === 'object') {
-    return string;
   } if(typeof(result) === 'undefined') {
     return notdefined;  
   } else {
