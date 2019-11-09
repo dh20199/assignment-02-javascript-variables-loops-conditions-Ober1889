@@ -30,8 +30,8 @@
  * greet the user!
  * @returns {string} should be exactly "Hello!"
  */
- function hello () {
-    return("Hello!");
+function hello () {
+  return('Hello!');
   // if you want you can declare a string variable first
   // or in this case you can just return the string directly
   // with something like "return 'Hello!'"
@@ -47,9 +47,9 @@
  * @returns {string} a sentence that uses NAME i nits construction.
  */
 function greeting() {
-  let name = "Ms. Atwood!";
-  let greeting = "Hello,";
-  return greeting + " " + name;
+  let name = 'Ms. Atwood!';
+  let greeting = 'Hello,';
+  return greeting + ' ' + name;
   // use the '+' operator to combine
   // strings.  So for instance, if I wanted to
   // say goodbye, I might write
@@ -68,9 +68,9 @@ function greeting() {
  * @returns {} 
  */
 function returnArray(first, second, third) {
-  var first  = "Tim",
-      second = "Horton",
-      third = "Donuts";
+  var first  = 'Tim',
+      second = 'Horton',
+      third = 'Donuts';
   let Array1 = [ first, second, third ];
   return Array1;
   // you can define the array using "new Array ()" or just "[ , , ]"
@@ -92,8 +92,8 @@ function returnArray(first, second, third) {
  * @returns {string} a sentence  composed from the first 3 elements of the array
  */
 function splitArray(thisArray) {
-  var thisArray = ["Tim Horton", "a Donut.", "was"];
-  return (thisArray[0] + " " + thisArray[2] + " " + thisArray[1]);
+  var thisArray = ['Tim Horton', 'a Donut.', 'was'];
+  return (thisArray[0] + ' ' + thisArray[2] + ' ' + thisArray[1]);
   // remember you can access individual elements of an array with
   // array[0]
   // array[1]
@@ -110,8 +110,8 @@ function splitArray(thisArray) {
  * @returns {number} the difference of the two parameters
  */
 function subtract(number1, number2) {
- let number = (number1 - number2);
- return number;
+  let number = (number1 - number2);
+  return number;
   // subtract number2 from number1, and return the result.
 }
 
@@ -122,7 +122,7 @@ function subtract(number1, number2) {
 
 function carefulSubtract (first, second) {
   let output = first - second;
-  let string = "I can only subtract numbers.";
+  let string = 'I can only subtract numbers.';
   if (typeof(first) === 'number' && typeof(second) === 'number') {
     return output;
   } else {
@@ -131,7 +131,7 @@ function carefulSubtract (first, second) {
   // test to be sure that both first and second are numbers.
   // if so, return the result. Otherwise, return the string
   // "I can only subtract numbers."
-  }
+}
 
 // Problem 6
 // Write a simple function that does the following:
@@ -147,25 +147,24 @@ function carefulSubtract (first, second) {
  */
 function typeTester (unknown) {
   let result = unknown;
-  let string = "sorry, i can't do anything with a null value.";
-  let notdefined = "Sorry, I can't do anything with an undefined value.";
-  let other = "I don't know how to use that kind of variable.";
-
+  let string = 'sorry, i can\'t do anything with a null value.';
+  let notdefined = 'Sorry, I can\'t do anything with an undefined value.';
+  let other = 'I don\'t know how to use that kind of variable.';
   if(typeof(result) === 'string') {
-  return unknown + " yay!";
+    return unknown + ' yay!';
   } if(typeof(result) === 'number') {
-  return unknown * unknown;
-  } if(typeof(result) === 'undefined') {
-  return notdefined;  
+    return unknown * unknown;
   } if(typeof(result) === 'object') {
-  return string;
+    return string;
+  } if(typeof(result) === 'undefined') {
+    return notdefined;  
   } else {
-  return other;
+    return other;
   }
 }
 
-  // use an if/else construction, a switch/case , or any other branching logic. Remember to
-  // return a value. 
+// use an if/else construction, a switch/case , or any other branching logic. Remember to
+// return a value. 
 
 
 // DO NOT MODIFY -- FOR AUTOMATED TESTING ONLY
