@@ -273,13 +273,13 @@ function computeReign (pm) {
  * @returns {String} a set of sentences, each on its own line, constructed from
  *  the properties of the individual objects comprising `list`
  */
-function sentences(list) {
-  var str;
+function sentences(pmlist) {
+  var str = '';
   var reign;
   var pm;
   for (pm of pmlist) {
     reign = pm.to - pm.from;
-    str += pm.fullName + '\'s reign was' + reign + ' years long.' + '\n';
+    str += pm.fullName + '\'s reign was ' + reign + ' years long.' + '\n';
   }
   return str;
 }
